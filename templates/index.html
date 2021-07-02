@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>||VAHAN||</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="{{url_for('static',filename='css/styles.css')}}" rel="stylesheet" />
+    </head>
+    <body>
+        <div style="position: absolute; top: 0; left: 0;z-index: -100;">
+            <svg
+              width="883px"
+              height="584px"
+              viewBox="0 0 883 584"
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <defs>
+                <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="a">
+                  <stop stop-color="#F7FAFC" offset="0%"></stop>
+                  <stop stop-color="#DFEBF7" offset="100%"></stop>
+                </linearGradient>
+              </defs>
+              <path
+                d="M835.746-2.683c58.652 62.415 62.704 127.241 12.158 194.48C772.084 292.655 402.786 394.5 283.349 387.5 203.725 382.833 108.61 449-2 586V-14L835.746-2.683z"
+                fill="url(#a)"
+                fill-rule="evenodd"
+              ></path>
+            </svg>
+          </div>
+        <div class="container">
+            <p><h1>Automatic Number Plate Recognition</h1></p>
+            <div class="row">
+                <form method="post" action="/" enctype="multipart/form-data">
+                    <dl>
+                        <p>
+                            <input placeholder="Upload the image of the car" type="file" name="file" class="form-control" autocomplete="off" required>
+                        </p>
+                    </dl>
+                    <p>
+                        <input type="submit" value="Submit" class="btn btn-info">
+                    </p>
+                </form>
+            </div>
+        </div>
+        <!-- Product section-->
+        {% if result %}
+        <section class="py-5">
+            <div class="container px-4 px-lg-5 my-5">
+                <div class="row gx-4 gx-lg-5 align-items-center">
+                    <div class="col-md-6"><img class="card-img-top mb-5 mb-md-0" src="{{ url_for('display_image', filename=filename) }}"></div>
+                    <div class="col-md-6">
+                        <h1 class="display-5 fw-bolder">Details</h1> 
+                        <table class="table table-dark table-striped" border="1">
+                            <tbody>
+                          {% for key, value in result.items() %}
+                              <tr>
+                                <th scope="row">{{key}}</th>
+                                <td>{{value}}</td>
+                              </tr>
+                            {% endfor %}
+                            </tbody>
+                          </table>
+                       
+                    </div>
+                </div>
+            </div>
+        </section>
+        {% endif %}
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+</body>
+</html>
