@@ -1,0 +1,41 @@
+{
+    "HR.26 BR.9044" : {
+        "Address" : "H.S Road , Dibrugarh ,Assam" ,
+        "Name" : " Rohit Sharma" ,
+        "Email" : " rohitsharma@gmail.com" ,
+        "Vehicle number" :  "HR.26.BR.9044" ,
+        "Phone NO" : "9814526336"
+       },
+    
+       "H982 FKL" : {
+        "Address" : "A.T Road , Kanpur , U.P" ,
+        "Name" : " Virat Kohli" ,
+        "Email" : " viratkohli@gmail.com" ,
+        "Vehicle number" :  "H982 FKL" ,
+        "Phone NO" : "8814599880"
+       },
+
+       "YouTube" : {
+        "Address" : "56 O block Jamuna Nagar , Delhi" ,
+        "Name" : " Jasprit Bumrah" ,
+        "Email" : " bumrah@gmail.com" ,
+        "Vehicle number" :  "YouTube" ,
+        "Phone NO" : "7765423905"
+       },
+
+       "MH 20EE 7598" : {
+        "Address" : "Mahatma Gandhi Road, Vidya Nagar, Kala Ghoda, Fort, Mumbai" ,
+        "Name" : " Mitali Agarwal" ,
+        "Email" : " mitali@gmail.com" ,
+        "Vehicle number" :  "MH 20EE 7598" ,
+        "Phone NO" : "6789012345"
+       },
+
+       "Gd7O Eoo" : {
+        "Address" : "Navalar Nagar, Chepauk, Triplicane, Chennai, Tamil Nadu" ,
+        "Name" : " Subramanian Iyer" ,
+        "Email" : " iyer123@gmail.com" ,
+        "Vehicle number" :  "Gd7O Eoo" ,
+        "Phone NO" : "9988446677"
+       }
+}
